@@ -1,0 +1,14 @@
+{
+  "name": "crowdfunding-landing-page",
+  "version": "1.0.0",
+  "description": "Mastercraft Bamboo Monitor Riser",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "Kirill Durunda",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

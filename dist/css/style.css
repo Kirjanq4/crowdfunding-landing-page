@@ -1,0 +1,528 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Commissioner", sans-serif;
+  background-color: whitesmoke;
+  box-sizing: border-box; }
+
+/* Header */
+#header {
+  height: 400px;
+  max-width: 100%;
+  background: url("/dist/images/image-hero-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: center; }
+  #header .container {
+    display: flex;
+    justify-content: space-between; }
+  #header .logo {
+    background: url("/dist/images/logo.svg");
+    background-repeat: no-repeat;
+    width: 128px;
+    height: 20px;
+    margin: 50px 0 0 175px; }
+  #header .menu-nav ul {
+    display: flex;
+    margin-right: 100px; }
+  #header .menu-nav .nav-item {
+    list-style: none;
+    margin: 45px 40px 0 0; }
+    #header .menu-nav .nav-item a {
+      text-decoration: none;
+      color: #e6e6e6; }
+    #header .menu-nav .nav-item a:hover {
+      color: white;
+      cursor: pointer; }
+  #header .mobile-menu-btn {
+    display: none; }
+
+/* Discover section */
+#discover {
+  display: flex;
+  justify-content: center; }
+  #discover .container {
+    background-color: #fff;
+    width: 60%;
+    max-width: 720px;
+    min-width: 50%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 3em;
+    margin-top: -5rem; }
+  #discover h2 {
+    margin: 1rem 0; }
+  #discover .product-logo {
+    text-align: center;
+    width: 56px;
+    height: 56px;
+    margin: 0 auto;
+    margin-top: -70px; }
+  #discover .discover-content p {
+    color: #7a7a7a; }
+  #discover .discover-btns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px; }
+    #discover .discover-btns .bookmark {
+      position: relative;
+      cursor: pointer; }
+    #discover .discover-btns .left-btn {
+      padding: 0 1rem 0 1rem;
+      background-color: #3cb4ac;
+      border: none;
+      border-radius: 40px;
+      width: 40%;
+      height: 56px;
+      color: #fff;
+      font-weight: 700;
+      outline: none; }
+      #discover .discover-btns .left-btn:hover {
+        cursor: pointer;
+        background-color: #32958f; }
+    #discover .discover-btns svg {
+      position: absolute;
+      top: 0;
+      left: 0; }
+    #discover .discover-btns .right-btn {
+      display: flex;
+      border: none;
+      border-radius: 40px;
+      width: 170px;
+      height: 56px;
+      color: #7a7a7a;
+      font-weight: 700;
+      align-items: center;
+      outline: none;
+      justify-content: center; }
+      #discover .discover-btns .right-btn span {
+        margin-left: 3rem; }
+      #discover .discover-btns .right-btn:hover {
+        cursor: pointer; }
+
+/* Stats section */
+#stats {
+  margin: 1.5rem auto;
+  background-color: #fff;
+  padding: 0 3rem;
+  width: 60%;
+  max-width: 720px;
+  min-width: 50%;
+  border-radius: 10px; }
+  #stats .container {
+    display: flex;
+    justify-content: space-between; }
+    #stats .container .stats-block {
+      margin: 2.5rem 3rem 0 0; }
+      #stats .container .stats-block h2 {
+        margin: 0;
+        font-weight: 600; }
+      #stats .container .stats-block p {
+        margin: 0;
+        font-size: 12px; }
+    #stats .container .middle {
+      border-left: 2px solid whitesmoke;
+      border-right: 2px solid whitesmoke;
+      padding-left: 3rem;
+      padding-right: 4rem; }
+    #stats .container p {
+      color: #7a7a7a;
+      padding-top: 0.4rem; }
+  #stats .progress-bar {
+    display: flex;
+    padding: 2rem 0 2rem 0; }
+  #stats progress[value] {
+    -webkit-appearance: none;
+    height: 0.7rem;
+    width: 100%; }
+  #stats progress::-webkit-progress-bar {
+    background-color: whitesmoke;
+    border-radius: 5px; }
+  #stats progress::-webkit-progress-value {
+    border-radius: 5px;
+    background-color: #3cb4ac; }
+
+/* Description section */
+#description {
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 2rem 3rem;
+  width: 60%;
+  max-width: 720px;
+  min-width: 50%;
+  border-radius: 10px; }
+  #description p {
+    color: #7a7a7a;
+    margin: 2rem 0; }
+  #description .pledge-options {
+    display: flex;
+    flex-direction: column; }
+    #description .pledge-options .pledge-block {
+      border: 2px solid whitesmoke;
+      border-radius: 10px;
+      padding: 2rem 2rem;
+      margin: 1rem 0; }
+      #description .pledge-options .pledge-block .pledge-header {
+        display: flex;
+        justify-content: space-between; }
+        #description .pledge-options .pledge-block .pledge-header .pledge-price {
+          color: #3cb4ac;
+          font-size: 14px; }
+          #description .pledge-options .pledge-block .pledge-header .pledge-price:hover {
+            cursor: pointer;
+            color: #81d5cf; }
+      #description .pledge-options .pledge-block .pledge-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        #description .pledge-options .pledge-block .pledge-footer span {
+          color: #7a7a7a;
+          font-weight: 100;
+          font-size: 12px;
+          flex-grow: 1;
+          margin-left: 0.5rem; }
+        #description .pledge-options .pledge-block .pledge-footer button {
+          background-color: #3cb4ac;
+          border: none;
+          border-radius: 40px;
+          width: 150px;
+          height: 42px;
+          color: #fff;
+          font-weight: 700;
+          outline: none; }
+          #description .pledge-options .pledge-block .pledge-footer button:hover {
+            cursor: pointer;
+            background-color: #32958f; }
+    #description .pledge-options .out-of-stock {
+      opacity: 0.4; }
+      #description .pledge-options .out-of-stock .out-of-stock-btn {
+        background-color: #7a7a7a !important; }
+
+.bookmarked {
+  color: #3cb4ac !important; }
+
+/* Modal */
+#modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.6); }
+  #modal .active {
+    color: #3cb4ac; }
+  #modal .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 2rem 3rem;
+    margin: 10rem auto;
+    width: 75%;
+    max-width: 720px;
+    min-width: 70%;
+    border-radius: 10px;
+    color: #7a7a7a; }
+    #modal .container .out-of-stock {
+      opacity: 0.4; }
+    #modal .container button {
+      border: none;
+      background: #fff;
+      cursor: pointer; }
+      #modal .container button svg {
+        position: absolute;
+        top: 1rem;
+        right: 1rem; }
+        #modal .container button svg .icon {
+          fill: black;
+          opacity: 1; }
+  #modal h3,
+  #modal p,
+  #modal h4 {
+    margin-bottom: 1rem; }
+  #modal h3,
+  #modal h4 {
+    color: #000; }
+  #modal .modal-pledge-block {
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    margin-bottom: 2rem; }
+    #modal .modal-pledge-block .control-radio {
+      display: flex;
+      justify-content: space-around;
+      position: relative; }
+      #modal .modal-pledge-block .control-radio:hover {
+        cursor: pointer; }
+        #modal .modal-pledge-block .control-radio:hover .modal-pledge-price,
+        #modal .modal-pledge-block .control-radio:hover h4 {
+          color: #3cb4ac; }
+        #modal .modal-pledge-block .control-radio:hover .control-indicator {
+          border-color: #3cb4ac; }
+      #modal .modal-pledge-block .control-radio input {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        opacity: 0; }
+      #modal .modal-pledge-block .control-radio input:checked + .control-indicator {
+        background: radial-gradient(#3cb4ac 40%, #fff 40%); }
+      #modal .modal-pledge-block .control-radio .control-indicator {
+        margin-right: 1.5rem;
+        padding: 0.7rem;
+        height: 0.001rem;
+        border-radius: 50%;
+        border: 1px solid #e6e6e6; }
+      #modal .modal-pledge-block .control-radio .pledge-left {
+        color: #7a7a7a;
+        font-weight: 100; }
+    #modal .modal-pledge-block .pledge-content-header {
+      display: flex; }
+      #modal .modal-pledge-block .pledge-content-header div {
+        margin: 0 8rem 0 1rem;
+        font-weight: 500;
+        color: #3cb4ac; }
+    #modal .modal-pledge-block .modal-pledge-footer {
+      display: none;
+      justify-content: space-between;
+      border-top: 1px solid #e6e6e6;
+      margin: 1rem -1.5rem 0 -1.5rem;
+      padding: 2rem 1rem 0.8rem 1rem;
+      align-items: center; }
+      #modal .modal-pledge-block .modal-pledge-footer .footer-btns {
+        display: flex; }
+        #modal .modal-pledge-block .modal-pledge-footer .footer-btns .no-reward {
+          z-index: -2; }
+        #modal .modal-pledge-block .modal-pledge-footer .footer-btns div {
+          border: 1px solid #e6e6e6;
+          padding: 0.5rem 1rem 0.5rem 1rem;
+          border-radius: 20px;
+          color: #e6e6e6;
+          margin-right: 1rem; }
+        #modal .modal-pledge-block .modal-pledge-footer .footer-btns input[type="text"] {
+          width: 2rem;
+          border: none;
+          outline: none;
+          padding-left: 0.5rem;
+          font-weight: 700;
+          caret-color: #3cb4ac; }
+        #modal .modal-pledge-block .modal-pledge-footer .footer-btns input[type="submit"] {
+          background: #3cb4ac;
+          border: none;
+          color: #fff;
+          border-radius: 20px;
+          padding: 0 1rem 0 1rem;
+          outline: none; }
+          #modal .modal-pledge-block .modal-pledge-footer .footer-btns input[type="submit"]:hover {
+            cursor: pointer;
+            background-color: #32958f; }
+
+#success-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.6); }
+  #success-modal .success-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 2rem 3rem;
+    margin: 10rem auto;
+    width: 40%;
+    max-width: 720px;
+    min-width: 70%;
+    border-radius: 10px;
+    color: #7a7a7a; }
+    #success-modal .success-container .success-logo,
+    #success-modal .success-container .success-content,
+    #success-modal .success-container input {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem; }
+    #success-modal .success-container .success-content {
+      display: flex;
+      margin: 1rem 1.5rem; }
+      #success-modal .success-container .success-content h3 {
+        color: #000;
+        margin-bottom: 1rem;
+        text-align: center; }
+      #success-modal .success-container .success-content p {
+        line-height: 2;
+        text-align: center; }
+    #success-modal .success-container input {
+      background: #3cb4ac;
+      border: none;
+      color: #fff;
+      border-radius: 30px;
+      padding: 1rem 2rem;
+      outline: none;
+      font-weight: 700; }
+      #success-modal .success-container input:hover {
+        cursor: pointer;
+        background-color: #32958f; }
+
+@media screen and (max-width: 576px) {
+  #header {
+    background: url("/dist/images/image-hero-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; }
+    #header .logo {
+      margin-top: 20px;
+      margin-left: 30px; }
+    #header .mobile-menu-btn {
+      display: block;
+      width: 16px;
+      height: 15px;
+      margin-top: 20px;
+      margin-right: 35px;
+      cursor: pointer; }
+      #header .mobile-menu-btn .close {
+        display: none; }
+    #header .menu-nav {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: black;
+      background-color: rgba(0, 0, 0, 0.6); }
+      #header .menu-nav ul {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        margin: 5rem auto;
+        width: 90%;
+        border-radius: 10px; }
+        #header .menu-nav ul li {
+          margin-top: 0 !important;
+          padding: 2rem; }
+          #header .menu-nav ul li a {
+            font-weight: 500;
+            font-size: 18px;
+            color: #000 !important; }
+        #header .menu-nav ul li:nth-child(2) {
+          margin-right: 0;
+          border-top: 1px solid whitesmoke;
+          border-bottom: 1px solid whitesmoke; }
+  #discover .container {
+    width: 85%;
+    padding: 2.5rem 1rem 2.5rem 1rem; }
+  #discover .right-btn {
+    display: none !important; }
+  #discover .bookmark {
+    margin-right: 4rem;
+    margin-left: 1rem; }
+  #discover .left-btn {
+    width: 80% !important;
+    margin-left: 0.5rem; }
+  #stats {
+    width: 85%;
+    padding: 0 1rem;
+    align-items: center; }
+    #stats .container {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 0.5rem; }
+      #stats .container .middle {
+        border-left: none;
+        border-right: none;
+        border-top: 2px solid whitesmoke;
+        border-bottom: 2px solid whitesmoke;
+        padding: 1rem 0; }
+      #stats .container .stats-block {
+        margin-top: 1rem;
+        text-align: center; }
+      #stats .container h2 {
+        font-size: 28px; }
+    #stats .progress-bar {
+      width: 90%;
+      padding: 2rem 1.5rem;
+      margin: 0 a; }
+  #description {
+    width: 85%;
+    padding: 2rem 1rem;
+    line-height: 1.5; }
+    #description .container {
+      padding: 0 1.5rem; }
+      #description .container .pledge-header {
+        flex-direction: column; }
+      #description .container .pledge-footer {
+        align-items: flex-start !important;
+        flex-wrap: wrap; }
+        #description .container .pledge-footer h2 {
+          margin-bottom: 1.5rem; }
+        #description .container .pledge-footer span {
+          margin-top: 0.5rem;
+          flex: 0 0 70%; }
+  #modal .container {
+    padding: 2rem 2rem; }
+    #modal .container .pledge-container {
+      margin-top: -1rem; }
+    #modal .container .modal-pledge-block {
+      margin-bottom: 0;
+      margin-top: 1.5rem; }
+      #modal .container .modal-pledge-block .pledge-content-header {
+        flex-direction: column;
+        margin-top: -0.7rem; }
+        #modal .container .modal-pledge-block .pledge-content-header .modal-pledge-price {
+          margin: -0.5rem 0 1rem 0; }
+        #modal .container .modal-pledge-block .pledge-content-header .mobile-pledge-left {
+          position: absolute;
+          bottom: -2rem;
+          left: 0;
+          padding: 1rem 0; }
+      #modal .container .modal-pledge-block .pledge-text {
+        margin-left: -3rem;
+        padding-bottom: 1.5rem;
+        position: relative; }
+      #modal .container .modal-pledge-block .modal-pledge-footer {
+        flex-direction: column;
+        padding: 0.5rem; }
+        #modal .container .modal-pledge-block .modal-pledge-footer span {
+          margin: 1rem 0; }
+        #modal .container .modal-pledge-block .modal-pledge-footer .footer-btns {
+          width: 90%;
+          display: flex;
+          justify-content: space-between; }
+          #modal .container .modal-pledge-block .modal-pledge-footer .footer-btns div {
+            border-radius: 35px; }
+            #modal .container .modal-pledge-block .modal-pledge-footer .footer-btns div input {
+              padding: 0.4rem 0.7rem; }
+          #modal .container .modal-pledge-block .modal-pledge-footer .footer-btns input[type="submit"] {
+            padding-right: 2.2rem;
+            padding-left: 2.2rem;
+            border-radius: 35px; } }
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  #header .logo {
+    margin-left: 40px; }
+  #header .menu-nav ul {
+    margin-right: 20px; }
+  #discover .bookmark {
+    margin-left: 1rem; }
+  #modal .modal-pledge-price {
+    margin-right: 4rem !important; } }
