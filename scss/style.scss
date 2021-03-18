@@ -20,9 +20,6 @@ body {
   font-family: "Commissioner", sans-serif;
   background-color: darken($color: #fff, $amount: 4);
   box-sizing: border-box;
-
-  .container {
-  }
 }
 
 /* Header */
@@ -70,6 +67,9 @@ body {
 
   .mobile-menu-btn {
     display: none;
+  }
+  .show-menu {
+    display: block !important;
   }
 }
 

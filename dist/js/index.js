@@ -41,7 +41,7 @@ closeBtn.addEventListener("click", function () {
 });
 
 window.addEventListener("click", function (e) {
-  if (e.target == modal) {
+  if (e.target === modal) {
     modal.style.display = "none";
   }
 });
@@ -248,3 +248,11 @@ for (const navBtn of navItemBtns) {
     menuShow.style.display = "block";
   });
 }
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 576) {
+    menuNav.classList.add("show-menu");
+  } else {
+    menuNav.classList.remove("show-menu");
+  }
+});

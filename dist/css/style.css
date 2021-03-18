@@ -43,6 +43,8 @@ body {
       cursor: pointer; }
   #header .mobile-menu-btn {
     display: none; }
+  #header .show-menu {
+    display: block !important; }
 
 /* Discover section */
 #discover {
