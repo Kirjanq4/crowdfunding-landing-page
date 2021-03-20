@@ -25,7 +25,7 @@
       <!----- Header ----->
       <header id="header">
         <div class="container">
-          <a href="index.html"><div class="logo"></div></a>
+          <a href="index.html" id="index"><div class="logo"></div></a>
 
           <!---- Mobile menu ---->
           <div class="mobile-menu-btn">
@@ -202,7 +202,7 @@
 
       <div id="modal">
         <div class="container">
-          <button class="close-btn">
+          <button class="close-btn" aria-label="close">
             <svg width="15" height="15" xmlns="http://www.w3.org/2000/svg">
               <path
                 class="icon"
@@ -242,7 +242,9 @@
                 <div class="modal-pledge-footer">
                   <span></span>
                   <div class="footer-btns">
-                    <div class="no-reward"><input type="text" /></div>
+                    <div class="no-reward">
+                      <input type="text" aria-label="no-reward" />
+                    </div>
                     <input type="submit" value="Continue" />
                   </div>
                 </div>
@@ -272,7 +274,9 @@
                 <div class="modal-pledge-footer">
                   <span>Enter your pledge</span>
                   <div class="footer-btns">
-                    <div>$<input type="text" id="bamboo" /></div>
+                    <div>
+                      $<input type="text" id="bamboo" aria-label="bamboo" />
+                    </div>
                     <input type="submit" value="Continue" />
                   </div>
                 </div>
@@ -302,7 +306,9 @@
                 <div class="modal-pledge-footer">
                   <span>Enter your pledge</span>
                   <div class="footer-btns">
-                    <div>$<input type="text" id="black" /></div>
+                    <div>
+                      $<input type="text" id="black" aria-label="black" />
+                    </div>
                     <input type="submit" value="Continue" />
                   </div>
                 </div>
@@ -338,7 +344,7 @@
                 <div class="modal-pledge-footer">
                   <span>Enter your pledge</span>
                   <div class="footer-btns">
-                    <div>$<input type="text" /></div>
+                    <div>$<input type="text" aria-label="mahogany" /></div>
                     <input type="submit" value="Continue" />
                   </div>
                 </div>

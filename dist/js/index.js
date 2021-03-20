@@ -120,16 +120,22 @@ for (btn of submitBtns) {
     totalBackersElement.textContent = formattedBackers;
 
     totalMoney = totalMoney + getInputValue();
+
     let formattedMoney = new Intl.NumberFormat("en-US", {
       style: "currency",
       currency: "USD",
       minimumFractionDigits: 0,
     }).format(totalMoney);
-    totalMoneyElement.textContent = formattedMoney;
 
+    totalMoneyElement.textContent = formattedMoney;
+    console.log(getInputValue());
     progressBar.value = progressBar.value + getInputValue() / 1000;
     let x = progressBar.value.toFixed(5);
     progressBar.value = x;
+
+    for (input of inputs) {
+      input.value = null;
+    }
 
     modal.style.display = "none";
 
@@ -147,7 +153,7 @@ function getInputValue() {
   for (input of inputs) {
     if (input.value > 0) {
       return parseInt(input.value);
-    } else return 0;
+    } else return null;
   }
 }
 
