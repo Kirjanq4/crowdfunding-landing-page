@@ -128,7 +128,7 @@ for (btn of submitBtns) {
     }).format(totalMoney);
 
     totalMoneyElement.textContent = formattedMoney;
-    console.log(getInputValue());
+    // console.log(getInputValue());
     progressBar.value = progressBar.value + getInputValue() / 1000;
     let x = progressBar.value.toFixed(5);
     progressBar.value = x;
@@ -153,8 +153,9 @@ function getInputValue() {
   for (input of inputs) {
     if (input.value > 0) {
       return parseInt(input.value);
-    } else return null;
+    }
   }
+  return (inputs[0].value = 0);
 }
 
 // Fixed reward
