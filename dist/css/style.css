@@ -207,6 +207,10 @@ body {
       #description .pledge-options .out-of-stock .out-of-stock-btn {
         background-color: #7a7a7a !important; }
 
+#footer {
+  text-align: center;
+  padding: 2rem; }
+
 .bookmarked {
   color: #3cb4ac !important; }
 
@@ -285,6 +289,9 @@ body {
         height: 0.001rem;
         border-radius: 50%;
         border: 1px solid #e6e6e6; }
+      #modal .modal-pledge-block .control-radio .mobile-pledge-left {
+        position: absolute;
+        right: 1.5rem; }
       #modal .modal-pledge-block .control-radio .pledge-left {
         color: #7a7a7a;
         font-weight: 100; }

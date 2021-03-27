@@ -250,9 +250,11 @@ menuClose.addEventListener("click", function () {
 
 for (const navBtn of navItemBtns) {
   navBtn.addEventListener("click", function () {
-    menuNav.style.display = "none";
-    menuClose.style.display = "none";
-    menuShow.style.display = "block";
+    if (window.innerWidth < 576) {
+      menuNav.style.display = "none";
+      menuClose.style.display = "none";
+      menuShow.style.display = "block";
+    }
   });
 }
 

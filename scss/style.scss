@@ -307,6 +307,11 @@ body {
   }
 }
 
+#footer {
+  text-align: center;
+  padding: 2rem;
+}
+
 .bookmarked {
   color: hsl(176, 50%, 47%) !important;
 }
@@ -416,6 +421,11 @@ body {
         height: 0.001rem;
         border-radius: 50%;
         border: 1px solid hsl(0, 0%, 90%);
+      }
+
+      .mobile-pledge-left {
+        position: absolute;
+        right: 1.5rem;
       }
 
       .pledge-left {
