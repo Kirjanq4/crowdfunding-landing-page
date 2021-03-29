@@ -1,3 +1,7 @@
-<h1 align="center">Simple Crodwfunding Landing Page</h1>
-<a href="https://crowdfunding-landing-page-r6o9785h2-kirjanq4.vercel.app/">Live Demo<a/>
-  
+# Crodwfunding Landing Page
+
+### *Made with HTML, SCSS and pure JS*
+
+
+[Live Demo](https://crowdfunding-landing-page-r6o9785h2-kirjanq4.vercel.app/)
+
