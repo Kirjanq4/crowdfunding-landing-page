@@ -1,4 +1,4 @@
-# Crodwfunding Landing Page
+# Crowdfunding Landing Page
 
 ### *Made with HTML, SCSS and pure JS*
 
